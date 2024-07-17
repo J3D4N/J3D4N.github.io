@@ -1,0 +1,145 @@
+body {
+    background: #ffecd4;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background: #e64e2a;
+    color: #fff;
+    padding: 8px 0;
+    text-align: center;
+}
+
+header h1 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul li a.cart-icon img {
+    width: 24px;
+    vertical-align: middle;
+}
+
+.cart {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.cart-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.cart-items-section {
+    width: 70%; /* Mengatur lebar bagian keranjang belanja */
+    text-align: left; /* Posisi teks ke kiri */
+    background-color: #fff;
+}
+
+h2 {
+    margin-left: 10px;
+}
+table {
+    width: 97%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+.cart-total {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.order-form-section {
+    width: 30%; /* Mengatur lebar bagian form pemesanan */
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.order-form-section .form-group {
+    margin-bottom: 15px;
+}
+
+.order-form-section .form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.order-form-section .form-group input#customer-name {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1.5em; /* Ukuran font untuk nama */
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+.order-form-section .form-group input#table-number {
+    width: 5em; /* Lebar untuk nomor meja */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 5em; /* Ukuran font untuk nomor meja */
+    font-family: 'Roboto', Arial, sans-serif;
+    text-align: center;
+}
+
+.order-form-section .form-group input#table-number {
+    width: 100px; /* Menyesuaikan lebar untuk nomor meja */
+    height: 100px;
+    text-align: center; /* Pusatkan teks */
+}
+
+.btn {
+    background: #ff5733;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+footer {
+    background: #e64e2a;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}

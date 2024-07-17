@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keranjang Belanja</title>
+    <link rel="stylesheet" href="styles-cart.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="#">Toko Makanan & Minuman</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Beranda</a></li>
+                    <li><a href="makanan.html">Makanan</a></li>
+                    <li><a href="minuman.html">Minuman</a></li>
+                    <li><a href="snack.html">Snack</a></li>
+                    <li><a href="cart.html" class="cart-icon"><img src="images/keranjang.png" alt="Keranjang"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="cart">
+        <div class="container">
+            <div class="cart-content">
+                <div class="cart-items-section">
+                    <h2>Keranjang Belanja</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Produk</th>
+                                <th>Harga</th>
+                                <th>Jumlah</th>
+                                <th>Total</th>
+                                <th>Aksi</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cart-items">
+                            <!-- Items will be dynamically added here -->
+                        </tbody>
+                    </table>
+                    <div class="cart-total">
+                        <h3>Total: <span id="cart-total">Rp. 0</span></h3>
+                    </div>
+                </div>
+                <div class="order-form-section">
+                    <h2>Form Pemesanan</h2>
+                    <form id="order-form">
+                        <div class="form-group">
+                            <label for="customer-name">Nama:</label>
+                            <input type="text" id="customer-name" name="customer-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="table-number">No Meja:</label>
+                            <input type="text" id="table-number" name="table-number" maxlength="2" required>
+                        </div>
+                        <button type="submit" class="btn">Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Toko Makanan & Minuman. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="cart.js"></script>
+</body>
+</html>
